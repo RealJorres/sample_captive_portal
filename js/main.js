@@ -2,7 +2,7 @@ function Redirect(){
     var checkbox = document.getElementById("agree");
 
     if ( checkbox.checked){
-        window.location.href = "../pages/login.html";
+        window.location.href = ".../sample_captive_portal/pages/login.html";
     }
     else{
         Swal.fire({
