@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container{
+    /* background-color: #f7f0f0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 375px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+.container .header{
+    display: flex;
+    position: relative;
+    top: 0px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .header img{
+    width: 50%;
+    margin: auto;
+
+}
+
+
+.container .header .title{
+    text-align: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.container .login_button, .container form .login_button{
+    width: 50%;
+    align-self: center;
+    cursor: pointer;
+    outline: none;
+    
+    height: 2.5rem;
+    border: none;
+    box-shadow: var(--box-shadow);
+
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.container span{
+    margin: auto;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3px 20px;
+}
+
+.container form label{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.container form input[type="text"], .container form input[type="password"]{
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.container form span{
+    margin-bottom: 15px;
+}
+
+.term-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 5px 20px;
+    padding: 5px;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.6rem;
+    text-align: start;
+}
+
+.term-title{
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.term-subtitle{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.term-container hr{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.term-accept{
+    margin-top: 20px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+
+ul li , ul li ul li{
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+ul li p, ul li ul li p{
+  display: inline; /* or inline-block */
+  margin: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.container span input[type="checkbox"]:disabled:checked{
+    accent-color: purple;
+    opacity: 1;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 375px) {
+    .container{
+        width: 100%;
+    }
+
+    .container span{
+        font-size: 14px;
+    }
+
+
+    .title{
+        font-size: 24px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container{
+        width: 80%;
+    }
+
+
+    .title{
+        font-size: 26px;
+    }
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container{
+        width: 30%;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+}
